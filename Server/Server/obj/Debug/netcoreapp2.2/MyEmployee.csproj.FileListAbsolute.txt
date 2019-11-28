@@ -1,0 +1,14 @@
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\bin\Debug\netcoreapp2.2\MyEmployee.deps.json
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\bin\Debug\netcoreapp2.2\MyEmployee.runtimeconfig.json
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\bin\Debug\netcoreapp2.2\MyEmployee.runtimeconfig.dev.json
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\bin\Debug\netcoreapp2.2\MyEmployee.dll
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\bin\Debug\netcoreapp2.2\MyEmployee.pdb
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.csprojAssemblyReference.cache
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.csproj.CoreCompileInputs.cache
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.RazorAssemblyInfo.cache
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.RazorAssemblyInfo.cs
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.AssemblyInfoInputs.cache
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.AssemblyInfo.cs
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.RazorTargetAssemblyInfo.cache
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.dll
+C:\Users\jasalk\Documents\Visual Studio 2017\Projects\Server\Server\obj\Debug\netcoreapp2.2\MyEmployee.pdb
