@@ -1,0 +1,30 @@
+<div class="container">
+    <table class="table">
+        <thead class="thead-light">
+            <tr>
+                <th> Name</th>
+                <th>Department </th>
+                <th> Email </th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <!--  pagination -->
+            <tr ng-repeat="employee in employees | startPagination:(currentPage -1) * pageSize | limitTo:pageSize">
+                <td scope="col-md-4">{{employee.name}} </td>
+                <td scope="col-md-4"> {{employee.department}} </td>
+                <td scope="col-md-4"> {{employee.email}} </td>
+                <td><a class="btn btn-primary" href="#!/EmployeeDetailView/{{employee.employeeId}}"> DetailView</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div>
+        <button type="submit" class="btn btn-primary  float-right" ng-click="duplicateEmail()"> check duplicate</button>
+    </div>
+    <!-- pagination -->
+    <div style="padding-top: 50px;">
+        <ul uib-pagination total-items="employees.length" ng-model="currentPage" items-per-page="pageSize"></ul>
+    </div>
+</div>

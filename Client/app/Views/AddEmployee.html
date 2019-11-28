@@ -1,0 +1,108 @@
+<div class="container">
+    <form name="employeeForm">
+        <div class="form-group row" novalidate>
+
+            <div class="col-md-6">
+                <label> Name </label>
+                <input type="text" class="form-control" placeholder="Name" name="name" ng-model="name" required />
+                <!-- <div ng-show="employeeForm.name.$untouched   &&  employeeForm.name.$invalid">
+                    <span style="color:red;display:block;text-align:center;"> enter valid name</span>
+                </div>  -->
+                <span style="color:red" ng-show="employeeForm.name.$dirty && employeeForm.name.$invalid">
+                    <span ng-show="employeeForm.name.$error.required">Username is required</span>
+                </span>
+            </div>
+            <div class="col-md-6">
+                <label>Department</label>
+                <input type="text" class="form-control" placeholder="Department" name="dept" ng-model="department"
+                    ng-required="true" />
+                <span style="color:red" ng-show="employeeForm.dept.$dirty && employeeForm.dept.$invalid">
+                    <span ng-show="employeeForm.dept.$error.required">Department name is required</span>
+                </span>
+            </div>
+        </div>
+        <div class="form-group row">
+
+            <div class="col-md-6">
+                <label>Email</label>
+                <input type="email" class="form-control" placeholder="Email" name="mail" ng-model="email"
+                    ng-required="true">
+                <span style="color:red" ng-show="employeeForm.mail.$dirty && employeeForm.mail.$invalid">
+                    <span ng-show="employeeForm.mail.$error.required"> Email is required</span>
+                </span>
+            </div>
+            <div class="col-md-6">
+                <label> Date of Birth</label>
+                <input type="date" class="form-control" placeholder="DateOfbirth" ng-model="dateOfBirth"
+                    ng-required="true">
+            </div>
+        </div>
+        <div class="form-group row">
+
+            <div class="col-md-6">
+                <label>Address</label>
+                <input type="text" class="form-control" placeholder="Address" ng-model="address" ng-required="true">
+            </div>
+            <div class="col-md-6">
+                <label> Phone Number</label>
+                <input type="number" class="form-control" placeholder="Phone Number" name="phone" ng-model="phoneNumber"
+                    ng-required="true" />
+
+                <span class="help-block" style="color:red;display:block;text-align:center;" ng-show="((employeeForm.phone.$error.minlength ||
+                         employeeForm.phone.$error.maxlength) && 
+                         employeeForm.phone.$dirty) ">
+                    valid phonenumber is required
+                </span>
+                <span class="help-block" ng-show="((employeeForm.phone.$error.minlength || 
+                      employeeForm.phone.$error.maxlength) && 
+                      employeeForm.phone.$dirty) ">
+                    phone number should be 10 digits
+                </span>
+
+            </div>
+        </div>
+        <div class="form-group row">
+
+            <div class="col-md-6">
+                <label>Salary</label>
+                <input type="number" class="form-control" ng-model="salary"  placeholder="00"  name="salary"
+                    decimals="2" ng-required="true" />
+                <span style="color:red" ng-show="employeeForm.salary.$dirty && employeeForm.salary.$invalid">
+                    <span ng-show="employeeForm.salary.$error.required"> salary is required</span>
+                </span>
+            </div>
+
+        </div>
+
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" ng-value="'male'"
+                            ng-required="true" ng-model="gender" checked>
+                        <label class="form-check-label" for="gridRadios1">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" ng-value="'female'"
+                            ng-required="true" ng-model="gender">
+                        <label class="form-check-label" for="gridRadios2">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button type="submit" class="btn btn-primary" ng-click="addEmployee()" ng-show="!idEdit"
+                    ng-disabled="employeeForm.$invalid">Add</button>
+                <button type="submit" class="btn btn-primary" ng-click="updateEmployee()"
+                    ng-show="idEdit">update</button>
+            </div>
+        </div>
+    </form>
+</div>
